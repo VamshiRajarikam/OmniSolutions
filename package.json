@@ -1,7 +1,7 @@
 {
   "name": "material-kit-react",
   "version": "1.9.0",
-  "description": "Omni Solutions. Coded by Creative Tim",
+  "description": "Omni Solutions. Growth made easy.",
   "private": true,
   "main": "src/index.js",
   "dependencies": {

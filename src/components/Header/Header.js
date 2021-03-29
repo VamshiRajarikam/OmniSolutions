@@ -61,7 +61,7 @@ export default function Header(props) {
     [classes.fixed]: fixed,
   });
   const OmniIcon = () => (
-    <img src={require("assets/img/omni-logo.svg")} width="55" height="50"></img>
+    <img src={require("assets/img/omni-logo.svg")} width="52" height="50"></img>
   );
   const brandComponent = (
     <Button className={classes.title}>
