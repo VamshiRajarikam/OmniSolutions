@@ -21,9 +21,15 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>INFORMATION TECHNOLOGY SERVICES & CONSULTING</h2>
+          <h2 className={classes.title}>
+            INFORMATION TECHNOLOGY SERVICES & CONSULTING
+          </h2>
           <h5 className={classes.description}>
-            Omni Solutions India includes a comprehensive consult to help identify gaps and opportunities, a comprehensive report that includes a project plan with timelines and milestones, a cost analysis, and a schedule. We also offer a suite of quality products that will help you get there quickly and smoothly.
+            Omni Solutions includes a comprehensive consult to help identify
+            gaps and opportunities, a comprehensive report that includes a
+            project plan with timelines and milestones, a cost analysis, and a
+            schedule. We also offer a suite of quality products that will help
+            you get there quickly and smoothly.
           </h5>
         </GridItem>
       </GridContainer>
