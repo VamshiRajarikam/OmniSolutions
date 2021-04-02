@@ -71,12 +71,14 @@ export default function Header(props) {
         src={require("assets/img/omni-logo.png")}
         width="220"
         height="75"
+        alt="..."
       ></img>
     ) : (
       <img
         src={require("assets/img/omni-logo-inverted.png")}
         width="220"
         height="60"
+        alt="..."
       ></img>
     );
   const brandComponent = (
