@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -15,12 +15,13 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
-
+// import { ReactComponent as Logo } from "assets/img/omni-logo.svg";
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
   const classes = useStyles();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [invertflag, setInvertFlag] = useState(false);
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
       window.addEventListener("scroll", headerColorChange);
@@ -44,6 +45,7 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      setInvertFlag(true);
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -51,22 +53,36 @@ export default function Header(props) {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      setInvertFlag(false);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const { color, rightLinks, leftLinks, fixed, absolute } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
-  const OmniIcon = () => (
-    <img src={require("assets/img/omni-logo.svg")} width="52" height="50"></img>
-  );
+
+  const OmniIcon = () =>
+    // <Logo width="52" height="50" id="svg" />
+    invertflag ? (
+      <img
+        src={require("assets/img/omni-logo.png")}
+        width="220"
+        height="75"
+      ></img>
+    ) : (
+      <img
+        src={require("assets/img/omni-logo-inverted.png")}
+        width="220"
+        height="60"
+      ></img>
+    );
   const brandComponent = (
-    <Button className={classes.title}>
+    <Button className={classes.title} href="/">
       <OmniIcon />
-      {brand}
+      {/* {brand} */}
     </Button>
   );
   return (

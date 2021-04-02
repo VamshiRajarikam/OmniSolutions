@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
-       <ListItem className={classes.listItem}>
+      <ListItem className={classes.listItem}>
         <Button
           href="/"
           color="transparent"
@@ -42,7 +42,7 @@ export default function HeaderLinks(props) {
           buttonText="Technologies"
           buttonProps={{
             className: classes.navLink,
-            color: "transparent"
+            color: "transparent",
           }}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
@@ -54,18 +54,17 @@ export default function HeaderLinks(props) {
               className={classes.dropdownLink}
             >
               Documentation
-            </a>
+            </a>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="/contact-us"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          Download
+          Contact Us
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
