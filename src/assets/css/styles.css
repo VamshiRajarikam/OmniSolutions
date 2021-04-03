@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:regular,bold,italic&subset=latin,latin-ext");
+.boxy {
+  padding: "30px 30px 25px impo !important";
+}
+.boxy:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hvr:hover {
+  box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
+}
