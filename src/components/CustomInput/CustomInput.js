@@ -25,6 +25,8 @@ export default function CustomInput(props) {
     white,
     inputRootCustomClasses,
     success,
+    background,
+    labelTextClass,
   } = props;
 
   const labelClasses = classNames({
@@ -54,10 +56,16 @@ export default function CustomInput(props) {
     formControlClasses = classes.formControl;
   }
   return (
-    <FormControl {...formControlProps} className={formControlClasses}>
+    <FormControl
+      {...formControlProps}
+      className={classNames(formControlClasses, background)}
+    >
       {labelText !== undefined ? (
         <InputLabel
-          className={classes.labelRoot + " " + labelClasses}
+          className={classNames(
+            classes.labelRoot + " " + labelClasses,
+            labelTextClass
+          )}
           htmlFor={id}
           {...labelProps}
         >
@@ -88,4 +96,6 @@ CustomInput.propTypes = {
   error: PropTypes.bool,
   success: PropTypes.bool,
   white: PropTypes.bool,
+  background: PropTypes.string,
+  labelTextClass: PropTypes.string,
 };

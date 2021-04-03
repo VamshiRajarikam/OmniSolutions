@@ -62,6 +62,45 @@ const profilePageStyle = {
     margin: "20px auto 50px auto",
     textAlign: "center",
   },
+  header: {
+    fontFamily: ["Montserrat", "sans-serif"].join(","),
+    fontWeight: "800",
+    lineHeight: "1.2",
+    margin: "0 0 20px",
+    color: "#1b1d21",
+  },
+  center: {
+    marginTop: "auto",
+    marginBottom: "auto",
+    marginRight: "auto",
+    marginLeft: "auto",
+    display: "block",
+  },
+  backgroundColor: {
+    background: "linear-gradient(90deg,#29abe2 0%,#1f3d86 100%)",
+  },
+  backgroundWhite: {
+    backgroundColor: "rgba(255, 255, 255, 0.3)",
+  },
+  labelTextClass: {
+    color: "#FFFFFF !important",
+  },
+  socialIcons: {
+    position: "relative",
+    fontSize: "30px !important",
+    marginRight: "4px",
+    marginLeft: "20px",
+    color: "#29abe2",
+  },
+  selectionHover: {
+    color: "red",
+    "&:hover": {
+      background: "#efefef",
+    },
+  },
+  contactBox: {
+    padding: "30px 30px 25px",
+  },
 };
 
 export default profilePageStyle;
