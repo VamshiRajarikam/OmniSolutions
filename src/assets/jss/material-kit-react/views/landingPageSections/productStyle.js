@@ -15,6 +15,13 @@ const productStyle = {
   description: {
     color: "#999",
   },
+  imageDimensions: {
+    width: "100px",
+    height: "100px",
+  },
+  root: {
+    padding: "100px 50px 100px 50px",
+  },
 };
 
 export default productStyle;

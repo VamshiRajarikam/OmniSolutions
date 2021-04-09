@@ -38,7 +38,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4} className="hvr">
             <InfoArea
               title="Web Applications"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Modern web application for your business. We build responsive, scalable, secure single-page applications along with support for progressive web applications."
               icon={WebIcon}
               iconColor="info"
               vertical
@@ -47,7 +47,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4} className="hvr">
             <InfoArea
               title="Mobile Applications"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Improve your user's experience and enhance accessibility through mobile apps. Mobile app unlocks the potential to access all system resources. We support iOS and Android platforms."
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -56,9 +56,9 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4} className="hvr">
             <InfoArea
               title="Desktop Applications"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Uninterrupted business transactions through desktop applications. Desktop app offers offline capabilities, more security and fast. We support windows and mac operating systems."
               icon={Fingerprint}
-              iconColor="danger"
+              iconColor="rose"
               vertical
             />
           </GridItem>

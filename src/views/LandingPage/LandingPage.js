@@ -1,25 +1,21 @@
-import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
-
-// core components
-import Header from "components/Header/Header.js";
+import styles from "assets/jss/material-kit-react/views/landingPage.js";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+import Button from "components/CustomButtons/Button.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+// @material-ui/icons
+// core components
+import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-
-import styles from "assets/jss/material-kit-react/views/landingPage.js";
-
+import React from "react";
+import AboutSection from "./Sections/AboutSection.js";
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 
 const dashboardRoutes = [];
@@ -58,7 +54,6 @@ export default function LandingPage(props) {
                 color="danger"
                 size="lg"
                 href="/contact-us"
-                target="_blank"
                 rel="noopener noreferrer"
               >
                 Schedule a demo
@@ -70,7 +65,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
+          <AboutSection />
           <WorkSection />
         </div>
       </div>
