@@ -24,6 +24,7 @@ import emailjs from "emailjs-com";
 const useStyles = makeStyles(styles);
 export default function WorkSection() {
   const EMAIL_USER_ID = process.env.REACT_APP_EMAIL_USER_ID;
+  console.log(process.env);
   const classes = useStyles();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -43,10 +44,10 @@ export default function WorkSection() {
     };
     emailjs
       .send(
-        "service_avoha7w",
-        "template_gomy8dh",
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         templateParams,
-        EMAIL_USER_ID
+        process.env.REACT_APP_EMAIL_USER_ID
       )
       .then(
         (result) => {

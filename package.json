@@ -40,8 +40,8 @@
     "typescript": "3.9.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "sh -ac '. .env.development.local; react-scripts start'",
+    "build": "sh -ac '. .env.production.local; react-scripts build'",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
