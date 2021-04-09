@@ -22,7 +22,7 @@ const customInputStyle = {
   },
   underlineError: {
     "&:after": {
-      borderColor: dangerColor,
+      borderColor: dangerColor + " !important",
     },
   },
   underlineSuccess: {
@@ -40,7 +40,7 @@ const customInputStyle = {
   },
   labelRoot: {
     ...defaultFont,
-    color: "#AAAAAA !important",
+    color: "#AAAAAA",
     fontWeight: "400",
     fontSize: "14px",
     lineHeight: "1.42857",
@@ -48,6 +48,9 @@ const customInputStyle = {
     letterSpacing: "unset",
     "& + $underline": {
       marginTop: "0px",
+    },
+    "&focus": {
+      backgroundColor: "green",
     },
   },
   labelRootError: {

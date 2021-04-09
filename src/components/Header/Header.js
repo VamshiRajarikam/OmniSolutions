@@ -15,7 +15,8 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
-// import { ReactComponent as Logo } from "assets/img/omni-logo.svg";
+import { ReactComponent as Logo } from "assets/img/omnisol-logo.svg";
+import { ReactComponent as LogoInv } from "assets/img/omni-logo-inverted.svg";
 const useStyles = makeStyles(styles);
 
 export default function Header(props) {
@@ -65,21 +66,10 @@ export default function Header(props) {
   });
 
   const OmniIcon = () =>
-    // <Logo width="52" height="50" id="svg" />
     invertflag ? (
-      <img
-        src={require("assets/img/omni-logo.png")}
-        width="220"
-        height="75"
-        alt="..."
-      ></img>
+      <Logo width="300" height="70" id="svg" />
     ) : (
-      <img
-        src={require("assets/img/omni-logo-inverted.png")}
-        width="220"
-        height="60"
-        alt="..."
-      ></img>
+      <LogoInv width="300" height="70" id="svg" />
     );
   const brandComponent = (
     <Button className={classes.title} href="/">

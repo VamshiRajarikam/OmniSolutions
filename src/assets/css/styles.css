@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:regular,bold,italic&subset=latin,latin-ext");
+/* :root {
+  --logo-color: #1f3d86;
+} */
 .boxy {
   padding: "30px 30px 25px impo !important";
 }
@@ -13,3 +16,18 @@
   -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.1);
 }
+.input-group:focus-within label {
+  color: white !important;
+}
+/* svg {
+  cursor: pointer;
+}
+#textid {
+  fill: var(--logo-color) !important;
+}
+#subtext {
+  fill: var(--logo-color) !important;
+}
+#icon {
+  fill: var(--logo-color) !important;
+} */
