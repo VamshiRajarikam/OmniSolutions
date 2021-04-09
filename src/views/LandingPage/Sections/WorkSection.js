@@ -23,6 +23,7 @@ import {
 import emailjs from "emailjs-com";
 const useStyles = makeStyles(styles);
 export default function WorkSection() {
+  const EMAIL_USER_ID = process.env.REACT_APP_EMAIL_USER_ID;
   const classes = useStyles();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -45,7 +46,7 @@ export default function WorkSection() {
         "service_avoha7w",
         "template_gomy8dh",
         templateParams,
-        "user_HNQroc5LFdN4K0Cyl5rhS"
+        EMAIL_USER_ID
       )
       .then(
         (result) => {
@@ -60,6 +61,7 @@ export default function WorkSection() {
       );
   }
   const validation = () => {
+    console.log("ID", EMAIL_USER_ID);
     validateText(name) ? setNameError(false) : setNameError(true);
     validatePhoneNumber(phone) ? setPhoneError(false) : setPhoneError(true);
     validateEmail(email) ? setEmailError(false) : setEmailError(true);
