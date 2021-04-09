@@ -1,17 +1,15 @@
-import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+import Fingerprint from "@material-ui/icons/Computer";
+import VerifiedUser from "@material-ui/icons/PhoneIphone";
 // @material-ui/icons
 import WebIcon from "@material-ui/icons/Public";
-import VerifiedUser from "@material-ui/icons/PhoneIphone";
-import Fingerprint from "@material-ui/icons/Computer";
+import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
-
-import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
+import React from "react";
 
 const useStyles = makeStyles(styles);
 

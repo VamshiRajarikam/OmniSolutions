@@ -20,11 +20,11 @@ export default function Footer(props) {
   const { whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   const aClasses = classNames({
     [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   return (
     <footer className={footerClasses}>
@@ -32,28 +32,17 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="/"
-                className={classes.block}
-                target="_blank"
-              >
+              <a href="/" className={classes.block} target="_blank">
                 Omni Solutions India
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="/"
-                className={classes.block}
-                target="_blank"
-              >
+              <a href="/about-us" className={classes.block}>
                 About us
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <a
-                href="/contact-us"
-                className={classes.block}
-              >
+              <a href="/contact-us" className={classes.block}>
                 Contact Us
               </a>
             </ListItem>
@@ -69,7 +58,8 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
-        &copy; Copyright Omni Solutions India, {1900 + new Date().getYear()}. All rights reserved.
+          &copy; Copyright Omni Solutions India, {1900 + new Date().getYear()}.
+          All rights reserved.
         </div>
       </div>
     </footer>
@@ -77,5 +67,5 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
 };
