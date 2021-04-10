@@ -7,14 +7,12 @@ import Footer from "components/Footer/Footer.js";
 // import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 // import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 import React from "react";
-import WorkSection from "../LandingPage/Sections/WorkSection";
 // import { Input } from "@material-ui/core";
 import AboutSection from "views/LandingPage/Sections/AboutSection";
 
