@@ -26,5 +26,6 @@ yarn-error.log*
 # package
 /dist
 /src/assets/img/original
+/src/assets/img/Original
 # compiled css
 # *.css
