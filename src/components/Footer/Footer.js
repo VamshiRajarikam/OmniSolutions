@@ -32,7 +32,7 @@ export default function Footer(props) {
         <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
-              <a href="/" className={classes.block} target="_blank">
+              <a href="/" className={classes.block}>
                 Omni Solutions India
               </a>
             </ListItem>

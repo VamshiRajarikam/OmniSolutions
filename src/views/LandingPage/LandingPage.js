@@ -65,8 +65,16 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
+        </div>
+      </div>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.paddingVertical}>
           <AboutSection />
-          <WorkSection />
+        </div>
+      </div>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.paddingVertical}>
+          <WorkSection className={classes.paddingZero} />
         </div>
       </div>
       <Footer />

@@ -25,13 +25,13 @@ import image from "assets/img/bg7.jpg";
 
 const useStyles = makeStyles(styles);
 
-export default function LoginPage(props) {
+export default function LoginPage() {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
   setTimeout(function () {
     setCardAnimation("");
   }, 700);
   const classes = useStyles();
-  const { ...rest } = props;
+  // const { ...rest } = props;
   return (
     <div>
       <Header
@@ -39,7 +39,6 @@ export default function LoginPage(props) {
         color="transparent"
         brand="Omni Solutions"
         rightLinks={<HeaderLinks />}
-        {...rest}
       />
       <div
         className={classes.pageHeader}

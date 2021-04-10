@@ -101,6 +101,13 @@ const profilePageStyle = {
   contactBox: {
     padding: "30px 30px 25px",
   },
+  deformat: {
+    color: "inherit",
+    "&:hover": {
+      color: "inherit",
+      "text-decoration-line": "none",
+    },
+  },
 };
 
 export default profilePageStyle;

@@ -14,6 +14,7 @@ import GridItem from "components/Grid/GridItem.js";
 import SnackbarContent from "components/Snackbar/SnackbarContent.js";
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {
   validateEmail,
   validatePhoneNumber,
@@ -21,9 +22,7 @@ import {
 } from "utilities/utilities.js";
 
 const useStyles = makeStyles(styles);
-export default function WorkSection() {
-  const EMAIL_USER_ID = process.env.REACT_APP_EMAIL_USER_ID;
-  console.log(process.env);
+export default function WorkSection(props) {
   const classes = useStyles();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -61,7 +60,6 @@ export default function WorkSection() {
       );
   }
   const validation = () => {
-    console.log("ID", EMAIL_USER_ID);
     validateText(name) ? setNameError(false) : setNameError(true);
     validatePhoneNumber(phone) ? setPhoneError(false) : setPhoneError(true);
     validateEmail(email) ? setEmailError(false) : setEmailError(true);
@@ -100,9 +98,13 @@ export default function WorkSection() {
   const messageChange = (e) => {
     setMessage(e.target.value);
   };
-
   return (
-    <div className={classes.section}>
+    <div
+      className={classNames(
+        classes.section,
+        props.className ? props.className : null
+      )}
+    >
       <Card>
         {submittedForm && (
           <SnackbarContent
@@ -233,3 +235,7 @@ export default function WorkSection() {
     </div>
   );
 }
+WorkSection.propTypes = {
+  className: PropTypes.any,
+  children: PropTypes.node,
+};
