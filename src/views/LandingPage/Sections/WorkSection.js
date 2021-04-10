@@ -131,107 +131,102 @@ export default function WorkSection() {
         <Clearfix />
 
         <GridContainer justify="center" className={classes.backgroundColor}>
-          <GridItem cs={12} sm={12} md={11}>
-            <h2 className={classNames(classes.title, classes.labelTextClass)}>
-              Work with us
-            </h2>
-            <h4
-              className={classNames(
-                classes.description,
-                classes.labelTextClass
-              )}
-            >
-              Have questions about our services? Fill out the form and we’ll
-              give you all the answers you need.
-            </h4>
-            <form>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={12}>
-                  <CustomInput
-                    labelText="Your Name *"
-                    id="name"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                    white
-                    error={nameError}
-                    inputProps={{
-                      onChange: nameChange,
-                      value: name,
-                    }}
-                    background={classes.backgroundWhite}
-                    labelTextClass={classes.labelTextClass}
-                  />
-                  <CustomInput
-                    labelText="Your Phone number *"
-                    id="phone"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                    inputProps={{
-                      onChange: phoneChange,
-                      value: phone,
-                    }}
-                    error={phoneError}
-                    white
-                    background={classes.backgroundWhite}
-                    labelTextClass={classes.labelTextClass}
-                  />
-                  <CustomInput
-                    labelText="Your Email *"
-                    id="email"
-                    formControlProps={{
-                      fullWidth: true,
-                    }}
-                    inputProps={{
-                      onChange: emailChange,
-                      value: email,
-                    }}
-                    error={emailError}
-                    white
-                    background={classes.backgroundWhite}
-                    labelTextClass={classes.labelTextClass}
-                  />
-                </GridItem>
-                <CustomInput
-                  labelText="Message"
-                  id="message"
-                  name="message"
-                  formControlProps={{
-                    fullWidth: true,
-                    className: classes.textArea,
-                  }}
-                  inputProps={{
-                    multiline: true,
-                    rows: 5,
-                    onChange: messageChange,
-                    value: message,
-                  }}
-                  white
-                  background={classes.backgroundWhite}
-                  labelTextClass={classes.labelTextClass}
-                />
-
-                <GridItem xs={12} sm={12} md={4}>
-                  <Button
-                    className="hvr"
-                    variant="light"
-                    color="white"
-                    onClick={validation}
-                  >
-                    <span
-                      style={{
-                        color: "black",
-                        fontFamily: ["Nunito Sans", "sans-serif"].join(","),
-                        fontWeight: "800",
+          <GridItem cs={12} sm={12} md={12}>
+            <div className="p-4">
+              <h2 className={classNames(classes.title)}>Work with us</h2>
+              <h5 className={classNames(classes.description)}>
+                Have questions about our services? Fill out the form and we’ll
+                give you all the answers you need.
+              </h5>
+              <form>
+                <GridContainer>
+                  <GridItem xs={12} sm={12} md={12}>
+                    <CustomInput
+                      labelText="Your Name *"
+                      id="name"
+                      formControlProps={{
+                        fullWidth: true,
                       }}
+                      white
+                      error={nameError}
+                      inputProps={{
+                        onChange: nameChange,
+                        value: name,
+                      }}
+                      background={classes.backgroundWhite}
+                      labelTextClass={classes.labelTextClass}
+                    />
+                    <CustomInput
+                      labelText="Your Phone number *"
+                      id="phone"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                      inputProps={{
+                        onChange: phoneChange,
+                        value: phone,
+                      }}
+                      error={phoneError}
+                      white
+                      background={classes.backgroundWhite}
+                      labelTextClass={classes.labelTextClass}
+                    />
+                    <CustomInput
+                      labelText="Your Email *"
+                      id="email"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                      inputProps={{
+                        onChange: emailChange,
+                        value: email,
+                      }}
+                      error={emailError}
+                      white
+                      background={classes.backgroundWhite}
+                      labelTextClass={classes.labelTextClass}
+                    />
+                  </GridItem>
+                  <CustomInput
+                    labelText="Message"
+                    id="message"
+                    name="message"
+                    formControlProps={{
+                      fullWidth: true,
+                      className: classes.textArea,
+                    }}
+                    inputProps={{
+                      multiline: true,
+                      rows: 5,
+                      onChange: messageChange,
+                      value: message,
+                    }}
+                    white
+                    background={classes.backgroundWhite}
+                    labelTextClass={classes.labelTextClass}
+                  />
+
+                  <GridItem xs={12} sm={12} md={4}>
+                    <Button
+                      className="hvr"
+                      variant="light"
+                      color="white"
+                      onClick={validation}
                     >
-                      Send Message
-                    </span>
-                  </Button>
-                </GridItem>
-              </GridContainer>
-            </form>
+                      <span
+                        style={{
+                          color: "black",
+                          fontFamily: ["Nunito Sans", "sans-serif"].join(","),
+                          fontWeight: "800",
+                        }}
+                      >
+                        Send Message
+                      </span>
+                    </Button>
+                  </GridItem>
+                </GridContainer>
+              </form>
+            </div>
           </GridItem>
         </GridContainer>
       </Card>

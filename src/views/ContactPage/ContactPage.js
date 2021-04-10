@@ -34,7 +34,7 @@ import WorkSection from "../LandingPage/Sections/WorkSection";
 
 const useStyles = makeStyles(styles);
 
-export default function ProfilePage(props) {
+export default function ContactPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   // const imageClasses = classNames(
@@ -58,7 +58,7 @@ export default function ProfilePage(props) {
       />
       <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div>
+        <div className="mt-3 pt-3">
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={5} className={classes.center}>
@@ -68,47 +68,53 @@ export default function ProfilePage(props) {
                 <div className="boxy">
                   <div className={classes.contactBox}>
                     <div className="row">
-                      <i className={classes.socialIcons + " fas fa-globe"}></i>
-                      <GridItem xs={12} sm={12} md={8}>
-                        <div>
-                          <h6>Address:</h6>
-                          <p className="w-100">
-                            3-96/2, D.V.S Nagar, Munganoor, Hayathnagar,
-                            Hyderabad, TS 501511
-                          </p>
-                        </div>
-                      </GridItem>
+                      <div className="col-2 p-0">
+                        <i
+                          className={classes.socialIcons + " fas fa-globe ml-3"}
+                        ></i>
+                      </div>
+                      <div className="col-10">
+                        <h6>Address:</h6>
+                        <p className="w-100">
+                          3-96/2, D.V.S Nagar, Munganoor, Hayathnagar,
+                          Hyderabad, TS 501511
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="boxy">
                   <div className={classes.contactBox}>
                     <div className="row">
-                      <i
-                        className={classes.socialIcons + " fas fa-envelope"}
-                      ></i>
-                      <GridItem xs={12} sm={12} md={6}>
-                        <div className="">
-                          <h6>Email:</h6>
-                          <p>info@omnisolutionsindia.com</p>
-                        </div>
-                      </GridItem>
+                      <div className="col-2 p-0">
+                        <i
+                          className={
+                            classes.socialIcons + " fas fa-envelope ml-3"
+                          }
+                        ></i>
+                      </div>
+                      <div className="col-10">
+                        <h6>Email:</h6>
+                        <p>info@omnisolutionsindia.com</p>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="boxy">
                   <div className={classes.contactBox}>
                     <div className="row">
-                      <i
-                        className={classes.socialIcons + " fas fa-phone-volume"}
-                      ></i>
-                      <GridItem xs={12} sm={12} md={6}>
-                        <div className="">
-                          <h6>Phone:</h6>
-                          <p>+91-9966777629</p>
-                          <p>+91-9966777631</p>
-                        </div>
-                      </GridItem>
+                      <div className="col-2 p-0">
+                        <i
+                          className={
+                            classes.socialIcons + " fas fa-phone-volume"
+                          }
+                        ></i>
+                      </div>
+                      <div className="col-10">
+                        <h6>Phone:</h6>
+                        <p>+91-9966777629</p>
+                        <p>+91-9966777631</p>
+                      </div>
                     </div>
                   </div>
                 </div>

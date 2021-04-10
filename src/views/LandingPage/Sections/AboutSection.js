@@ -15,7 +15,7 @@ export default function AboutSection() {
   return (
     <Card className={classes.root}>
       <GridContainer justify="center" className="">
-        <GridItem xs={6} sm={6} md={6}>
+        <GridItem xs={12} sm={12} md={6}>
           <img src={image} alt="..." width="100%" />
           {/* <p className="text-primary font-weight-bold" text="dark">
             ABOUT OMNI SOLUTIONS
@@ -33,7 +33,7 @@ export default function AboutSection() {
             didn’t get there alone. And neither will you. Call kivyo today.
           </h5> */}
         </GridItem>
-        <GridItem xs={6} sm={6} md={6}>
+        <GridItem xs={12} sm={12} md={6}>
           <p className="text-primary font-weight-bold">ABOUT OMNI SOLUTIONS</p>
           <h2 className={classes.title}>
             Your Partner for Software Innovation

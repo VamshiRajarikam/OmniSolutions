@@ -9,7 +9,7 @@ import "assets/css/styles.css";
 // pages for this product
 // import Components from "views/Components/Components.js";
 import LandingPage from "views/LandingPage/LandingPage.js";
-import ProfilePage from "views/ProfilePage/ProfilePage.js";
+import ContactPage from "views/ContactPage/ContactPage.js";
 import LoginPage from "views/LoginPage/LoginPage.js";
 import AboutPage from "views/AboutPage/AboutPage";
 
@@ -19,7 +19,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
-      <Route path="/contact-us" component={ProfilePage} />
+      <Route path="/contact-us" component={ContactPage} />
       <Route path="/login-page" component={LoginPage} />
       <Route path="/about-us" component={AboutPage} />
       {/* <Route path="/contact-us" component={ContactUsPage} /> */}
